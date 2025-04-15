@@ -82,7 +82,7 @@ function About() {
               <p className="grid-subtext">
                In case you prefer it, you can also learn about me in my CV!
               </p>
-              <a href="\${import.meta.env.BASE_URL}assets/IgnacioMolina_Resume.pdf" target="_blank" className="w-full">
+              <a href="/assets/IgnacioMolina_Resume.pdf" target="_blank" className="w-full">
                 <Button name="Download CV" containerClass="w-full mt-10"  />
               </a>
             </div>

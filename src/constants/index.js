@@ -29,19 +29,19 @@ export const navLinks = [
       subdesc:
         'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
       href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-      texture: '\${import.meta.env.BASE_URL}textures/project/project1.mp4',
-      logo: '\${import.meta.env.BASE_URL}assets/project-logo1.png',
+      texture: '/textures/project/project1.mp4',
+      logo: '/assets/project-logo1.png',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
         boxShadow: '0px 0px 60px 0px #AA3C304D',
       },
-      spotlight: '\${import.meta.env.BASE_URL}assets/spotlight1.png',
+      spotlight: '/assets/spotlight1.png',
       tags: [
         {
           id: 1,
           name: 'React.js',
-          path: '\${import.meta.env.BASE_URL}assets/react.svg',
+          path: '/assets/react.svg',
         },
         {
           id: 2,
@@ -51,12 +51,12 @@ export const navLinks = [
         {
           id: 3,
           name: 'TypeScript',
-          path: '\${import.meta.env.BASE_URL}assets/typescript.png',
+          path: '/assets/typescript.png',
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '\${import.meta.env.BASE_URL}assets/framer.png',
+          path: '/assets/framer.png',
         },
       ],
     },
@@ -67,19 +67,19 @@ export const navLinks = [
       subdesc:
         'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
       href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-      texture: '\${import.meta.env.BASE_URL}textures/project/project2.mp4',
-      logo: '\${import.meta.env.BASE_URL}assets/project-logo2.png',
+      texture: '/textures/project/project2.mp4',
+      logo: '/assets/project-logo2.png',
       logoStyle: {
         backgroundColor: '#13202F',
         border: '0.2px solid #17293E',
         boxShadow: '0px 0px 60px 0px #2F6DB54D',
       },
-      spotlight: '\${import.meta.env.BASE_URL}assets/spotlight2.png',
+      spotlight: '/assets/spotlight2.png',
       tags: [
         {
           id: 1,
           name: 'React.js',
-          path: '\${import.meta.env.BASE_URL}assets/react.svg',
+          path: '/assets/react.svg',
         },
         {
           id: 2,
@@ -89,12 +89,12 @@ export const navLinks = [
         {
           id: 3,
           name: 'TypeScript',
-          path: '\${import.meta.env.BASE_URL}assets/typescript.png',
+          path: '/assets/typescript.png',
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '\${import.meta.env.BASE_URL}assets/framer.png',
+          path: '/assets/framer.png',
         },
       ],
     },
@@ -105,8 +105,8 @@ export const navLinks = [
       subdesc:
         'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
       href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-      texture: '\${import.meta.env.BASE_URL}textures/project/project3.mp4',
-      logo: '\${import.meta.env.BASE_URL}assets/project-logo3.png',
+      texture: '/textures/project/project3.mp4',
+      logo: '/assets/project-logo3.png',
       logoStyle: {
         backgroundColor: '#60f5a1',
         background:
@@ -114,12 +114,12 @@ export const navLinks = [
         border: '0.2px solid rgba(208, 213, 221, 1)',
         boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
       },
-      spotlight: '\${import.meta.env.BASE_URL}assets/spotlight3.png',
+      spotlight: '/assets/spotlight3.png',
       tags: [
         {
           id: 1,
           name: 'React.js',
-          path: '\${import.meta.env.BASE_URL}assets/react.svg',
+          path: '/assets/react.svg',
         },
         {
           id: 2,
@@ -129,12 +129,12 @@ export const navLinks = [
         {
           id: 3,
           name: 'TypeScript',
-          path: '\${import.meta.env.BASE_URL}assets/typescript.png',
+          path: '/assets/typescript.png',
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '\${import.meta.env.BASE_URL}assets/framer.png',
+          path: '/assets/framer.png',
         },
       ],
     },
@@ -145,19 +145,19 @@ export const navLinks = [
       subdesc:
         'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
       href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-      texture: '\${import.meta.env.BASE_URL}textures/project/project4.mp4',
-      logo: '\${import.meta.env.BASE_URL}assets/project-logo4.png',
+      texture: '/textures/project/project4.mp4',
+      logo: '/assets/project-logo4.png',
       logoStyle: {
         backgroundColor: '#0E1F38',
         border: '0.2px solid #0E2D58',
         boxShadow: '0px 0px 60px 0px #2F67B64D',
       },
-      spotlight: '\${import.meta.env.BASE_URL}assets/spotlight4.png',
+      spotlight: '/assets/spotlight4.png',
       tags: [
         {
           id: 1,
           name: 'React.js',
-          path: '\${import.meta.env.BASE_URL}assets/react.svg',
+          path: '/assets/react.svg',
         },
         {
           id: 2,
@@ -167,12 +167,12 @@ export const navLinks = [
         {
           id: 3,
           name: 'TypeScript',
-          path: '\${import.meta.env.BASE_URL}assets/typescript.png',
+          path: '/assets/typescript.png',
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '\${import.meta.env.BASE_URL}assets/framer.png',
+          path: '/assets/framer.png',
         },
       ],
     },
@@ -183,19 +183,19 @@ export const navLinks = [
       subdesc:
         'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
       href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '\${import.meta.env.BASE_URL}textures/project/project5.mp4',
-      logo: '\${import.meta.env.BASE_URL}assets/project-logo5.png',
+      texture: '/textures/project/project5.mp4',
+      logo: '/assets/project-logo5.png',
       logoStyle: {
         backgroundColor: '#1C1A43',
         border: '0.2px solid #252262',
         boxShadow: '0px 0px 60px 0px #635BFF4D',
       },
-      spotlight: '\${import.meta.env.BASE_URL}assets/spotlight5.png',
+      spotlight: '/assets/spotlight5.png',
       tags: [
         {
           id: 1,
           name: 'React.js',
-          path: '\${import.meta.env.BASE_URL}assets/react.svg',
+          path: '/assets/react.svg',
         },
         {
           id: 2,
@@ -205,12 +205,12 @@ export const navLinks = [
         {
           id: 3,
           name: 'TypeScript',
-          path: '\${import.meta.env.BASE_URL}assets/typescript.png',
+          path: '/assets/typescript.png',
         },
         {
           id: 4,
           name: 'Framer Motion',
-          path: '\${import.meta.env.BASE_URL}assets/framer.png',
+          path: '/assets/framer.png',
         },
       ],
     },
@@ -220,47 +220,47 @@ export const navLinks = [
     {
       id: 1,
       name: 'C++',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/cpp-logo.png',
+      icon: '/textures/technologies/cpp-logo.png',
     },
     {
       id: 2,
       name: 'Unity',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/unity-logo.png',
+      icon: '/textures/technologies/unity-logo.png',
     },
     {
       id: 3,
       name: 'Unreal Engine',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/ue-logo.png',
+      icon: '/textures/technologies/ue-logo.png',
     },
     {
       id: 4,
       name: 'C#',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/csharp-logo.png',
+      icon: '/textures/technologies/csharp-logo.png',
     },
     {
       id: 5,
       name: 'Javascript',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/js-logo.png',
+      icon: '/textures/technologies/js-logo.png',
     },
     {
       id: 6,
       name: 'React.js',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/react-logo.png',
+      icon: '/textures/technologies/react-logo.png',
     },
     {
       id: 7,
       name: 'Express.js',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/express-logo.png',
+      icon: '/textures/technologies/express-logo.png',
     },
     {
       id: 8,
       name: 'MongoDB',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/mongodb-logo.png',
+      icon: '/textures/technologies/mongodb-logo.png',
     },
     {
       id: 9,
       name: 'Git',
-      icon: '\${import.meta.env.BASE_URL}textures/technologies/git-logo.png',
+      icon: '/textures/technologies/git-logo.png',
     },
   ]
 
@@ -271,7 +271,7 @@ export const navLinks = [
       pos: 'C++ Software Engineer',
       duration: '2024 - Present',
       title: 'Development of slot games using a proprietary game engine on Linux and C++ environments.',
-      icon: '\${import.meta.env.BASE_URL}assets/experience/merkur-dosniha-logo.png',
+      icon: '/assets/experience/merkur-dosniha-logo.png',
       details: [
         'Participated in full-cycle game development from scratch to final release.',
         'Created and maintained core systems within the proprietary engine.',
@@ -286,7 +286,7 @@ export const navLinks = [
       pos: 'Educational Content Creator – Game Programming Master',
       duration: '2024 - 2025',
       title: 'Development of educational content for a master’s program in video game programming.',
-      icon: '\${import.meta.env.BASE_URL}assets/experience/ue-logo.png',
+      icon: '/assets/experience/ue-logo.png',
       details: [
         'Designed and structured educational slides aligned with the course syllabus.',
         'Recorded instructional videos covering game development concepts.',
@@ -300,7 +300,7 @@ export const navLinks = [
       pos: 'Game Developer',
       duration: '2020 - 2021',
       title: 'Full prototyping of a real-time multiplayer game with an authoritative server in GO and Unity client for browsers.',
-      icon: '\${import.meta.env.BASE_URL}assets/experience/netspot-logo.png',
+      icon: '/assets/experience/netspot-logo.png',
       details: [
         'Prototyped a real-time multiplayer game with an authoritative server built in GO and a Unity client for browser-based play.',
         'Developed the entire game from scratch, including core mechanics, user interactions, and server-client communication.',
@@ -314,7 +314,7 @@ export const navLinks = [
       pos: 'Unity Developer',
       duration: '2022 - 2023',
       title: 'Development and optimization of a VR Cardio: a medical software application for preoperative cardiac planning.',
-      icon: '\${import.meta.env.BASE_URL}assets/experience/spikatech-logo.png',
+      icon: '/assets/experience/spikatech-logo.png',
       details: [
         'Worked on VR-Cardio, a medical tool used for pre-surgical cardiac planning in virtual reality.',
         'Refactored the entire project to enable real-time multi-user online sessions across different platforms.',
@@ -328,7 +328,7 @@ export const navLinks = [
       pos: 'Unity Developer (Internship)',
       duration: '2022',
       title: 'Development of VR interactions and mini-games for a metaverse environment with online multiplayer functionality.',
-      icon: '\${import.meta.env.BASE_URL}assets/experience/welme-logo.png',
+      icon: '/assets/experience/welme-logo.png',
       details: [
         'Developed various VR interactions and mini-games within a metaverse environment.',
         'Implemented real-time multiplayer features using Mirror and company APIs.',
@@ -341,7 +341,7 @@ export const navLinks = [
       pos: 'Unity Developer (Internship)',
       duration: '2021 - 2022',
       title: 'Started a game project from the ground up, focusing on architecture and core gameplay mechanics.',
-      icon: '\${import.meta.env.BASE_URL}assets/experience/fifthelement-logo.png',
+      icon: '/assets/experience/fifthelement-logo.png',
       details: [
         'Designed the game’s architecture and developed the core gameplay loop from scratch.',
         'Worked closely with the design team to create tools that streamlined the level-building process.',
