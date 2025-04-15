@@ -8,6 +8,7 @@ import { Center, OrbitControls, useVideoTexture } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoConsole from "../components/DemoConsole";
 import DemoComputer from "../components/DemoComputer";
+import DemoPhone from "../components/DemoPhone";
 
 function Projects() {
     const [selectedProjectIdx, setSelectedProjectIdx] = useState(0);
@@ -25,10 +26,22 @@ function Projects() {
         })
     }
     
+    function renderProjectComponent(type, texture) {
+        switch (type) {
+            case 'Game':
+                return <DemoConsole texture={texture} />;
+            case 'Web':
+                return <DemoComputer texture={texture} />;
+            case 'Mobile':
+                return <DemoPhone texture={texture} />;
+            default:
+                return  <DemoConsole texture={texture} />;
+        }
+    }
         
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="work">
             <p className="head-text">My Work</p>
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full ">
                 <div className="flex flex-col gap-5 relative sm_p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -70,15 +83,15 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className="border border-black-300 bg-black-200 rounded-lg h-96 mf:h-full">
+                <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
                     <Canvas>
                         <ambientLight intensity={1} />
                         <directionalLight position={[10, 10, 5]}/>
+                        <directionalLight position={[10, 10, -5]}/>
                         <Center>
                             <Suspense fallback={<CanvasLoader />}>
                             <group scale={1} position={[0, 0, -13]} rotation={[0, 0, 0]}>
-                                {currentProject.type === 'Game' ? <DemoConsole texture={currentProject.texture} /> : <DemoComputer texture={currentProject.texture} />}
-                                
+                                {renderProjectComponent(currentProject.type, currentProject.videoTexture)}                       
                             </group>
                             </Suspense>
                         </Center>

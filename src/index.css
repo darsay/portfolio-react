@@ -74,7 +74,7 @@ body {
   }
 
   .copy-container {
-    @apply cursor-pointer flex justify-center items-center gap-2;
+    @apply cursor-pointer flex justify-center items-center gap-2 pointer-events-auto;
   }
 
   /* projects section  */
@@ -109,11 +109,11 @@ body {
   }
 
   .work-content {
-    @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-2 rounded-lg bg-black-200 border border-black-300 my-5;
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -126,7 +126,8 @@ body {
 
   /* contact section */
   .contact-container {
-    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-12;
+    @apply max-w-xl relative z-10 sm:px-10 px-5 mt-1  border border-black-300 bg-black-200 rounded-lg p-4 flex flex-col gap-5;
+ 
   }
 
   .field-label {

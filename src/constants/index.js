@@ -62,7 +62,7 @@ export const navLinks = [
     },
     {
       title: 'LiveDoc - Real-Time Google Docs Clone',
-      type: 'Web',
+      type: 'Mobile',
       desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
       subdesc:
         'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
@@ -214,4 +214,138 @@ export const navLinks = [
         },
       ],
     },
+  ];
+
+  export const technologies = [
+    {
+      id: 1,
+      name: 'C++',
+      icon: '/textures/technologies/cpp-logo.png',
+    },
+    {
+      id: 2,
+      name: 'Unity',
+      icon: '/textures/technologies/unity-logo.png',
+    },
+    {
+      id: 3,
+      name: 'Unreal Engine',
+      icon: '/textures/technologies/ue-logo.png',
+    },
+    {
+      id: 4,
+      name: 'C#',
+      icon: '/textures/technologies/csharp-logo.png',
+    },
+    {
+      id: 5,
+      name: 'Javascript',
+      icon: '/textures/technologies/js-logo.png',
+    },
+    {
+      id: 6,
+      name: 'React.js',
+      icon: '/textures/technologies/react-logo.png',
+    },
+    {
+      id: 7,
+      name: 'Express.js',
+      icon: '/textures/technologies/express-logo.png',
+    },
+    {
+      id: 8,
+      name: 'MongoDB',
+      icon: '/textures/technologies/mongodb-logo.png',
+    },
+    {
+      id: 9,
+      name: 'Git',
+      icon: '/textures/technologies/git-logo.png',
+    },
+  ]
+
+  export const workExperiences = [
+    {
+      id: 1,
+      name: 'Merkur Dosniha',
+      pos: 'C++ Software Engineer',
+      duration: '2024 - Present',
+      title: 'Development of slot games using a proprietary game engine on Linux and C++ environments.',
+      icon: '/assets/experience/merkur-dosniha-logo.png',
+      details: [
+        'Participated in full-cycle game development from scratch to final release.',
+        'Created and maintained core systems within the proprietary engine.',
+        'Designed and implemented new engine systems to enhance functionality.',
+        'Collaborated closely with design, art, and QA teams to ensure product quality and consistency.',
+        'Identified and resolved bugs to improve overall performance and stability.'
+      ],
+    },
+    {
+      id: 2,
+      name: 'Universidad Europea',
+      pos: 'Educational Content Creator – Game Programming Master',
+      duration: '2024 - 2025',
+      title: 'Development of educational content for a master’s program in video game programming.',
+      icon: '/assets/experience/ue-logo.png',
+      details: [
+        'Designed and structured educational slides aligned with the course syllabus.',
+        'Recorded instructional videos covering game development concepts.',
+        'Created exercises and exams to assess student understanding and progress.',
+        'Preparing for future delivery and teaching of the course material.'
+      ],
+    },
+    {
+      id: 3,
+      name: 'Netspot Hub',
+      pos: 'Game Developer',
+      duration: '2020 - 2021',
+      title: 'Full prototyping of a real-time multiplayer game with an authoritative server in GO and Unity client for browsers.',
+      icon: '/assets/experience/netspot-logo.png',
+      details: [
+        'Prototyped a real-time multiplayer game with an authoritative server built in GO and a Unity client for browser-based play.',
+        'Developed the entire game from scratch, including core mechanics, user interactions, and server-client communication.',
+        'Balanced game features to ensure fairness and smooth gameplay across all users.',
+        'Integrated external APIs to enhance gameplay and improve functionality.'
+      ],
+    },
+    {
+      id: 4,
+      name: 'Spika Tech',
+      pos: 'Unity Developer',
+      duration: '2022 - 2023',
+      title: 'Development and optimization of a VR Cardio: a medical software application for preoperative cardiac planning.',
+      icon: '/assets/experience/spikatech-logo.png',
+      details: [
+        'Worked on VR-Cardio, a medical tool used for pre-surgical cardiac planning in virtual reality.',
+        'Refactored the entire project to enable real-time multi-user online sessions across different platforms.',
+        'Developed custom shaders and modified the render pipeline to efficiently display complex medical data.',
+        'Focused on maintaining high performance and visual clarity in a resource-intensive VR environment.'
+      ],
+    },
+    {
+      id: 5,
+      name: 'Welme',
+      pos: 'Unity Developer (Internship)',
+      duration: '2022',
+      title: 'Development of VR interactions and mini-games for a metaverse environment with online multiplayer functionality.',
+      icon: '/assets/experience/welme-logo.png',
+      details: [
+        'Developed various VR interactions and mini-games within a metaverse environment.',
+        'Implemented real-time multiplayer features using Mirror and company APIs.',
+        'Worked on improving UI design, user interactivity, and navigation in a virtual reality space.',
+      ],
+    },
+    {
+      id: 6,
+      name: '5th Element Gaming',
+      pos: 'Unity Developer (Internship)',
+      duration: '2021 - 2022',
+      title: 'Started a game project from the ground up, focusing on architecture and core gameplay mechanics.',
+      icon: '/assets/experience/fifthelement-logo.png',
+      details: [
+        'Designed the game’s architecture and developed the core gameplay loop from scratch.',
+        'Worked closely with the design team to create tools that streamlined the level-building process.',
+        'Contributed to the game’s prototyping and iterative development cycle.'
+      ],
+    }
   ];

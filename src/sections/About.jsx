@@ -1,12 +1,16 @@
-import { useState } from "react";
-import Globe from "react-globe.gl";
+import { useState, Suspense } from "react";
 import Button from "../components/Button";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Center, Float } from "@react-three/drei";
+import CanvasLoader from "../components/CanvasLoader";
+import CvView from "../components/CvView";
 
 function About() {
 
     const [hasCopied, setHasCopied] = useState(false);
 
-    const handleCopy = () => {
+    const handleCopy = (e) => {
+      e.preventDefault();
       navigator.clipboard.writeText('molinanacho33@gmail.com');
       setHasCopied(true);
   
@@ -16,7 +20,7 @@ function About() {
     };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         
         {/* Introduction Block */}
@@ -54,42 +58,33 @@ function About() {
           </div>
         </div>
 
-        {/* Globe Block */}
+        {/* CV Block */}
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-            <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[
-                  {
-                    lat: 40.4168,
-                    lng: -3.7038,
-                    text: "I'm here!",
-                  },
-                ]}
-                ringsData={[
-                    {
-                        lat: 40.4168,
-                        lng: -3.7038,
-                }]}
-                ringMaxRadius={3}
-                ringPropagationSpeed={0.3}
-                ringRepeatPeriod={4000}
-              />
+            <div className="w-full h-full object-cover rounded-3xl">
+              <Canvas>
+                  <ambientLight intensity={1} />
+                  <directionalLight position={[10, 10, 5]}/>
+                  <directionalLight position={[10, 10, -5]}/>
+                  <Center>
+                      <Suspense fallback={<CanvasLoader />}>
+                      <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+                        <group scale={5.3} position={[0, 0, -1]} rotation={[0, 0, 0]}>
+                            <CvView />                     
+                        </group>
+                      </Float>
+                      </Suspense>
+                  </Center>
+              </Canvas>
             </div>
             <div>
-              <p className="grid-headtext">Where am I?</p>
+              <p className="grid-headtext">My CV</p>
               <p className="grid-subtext">
-                I am currently based in Madrid, Spain. I am open to remote work opportunities.
+               In case you prefer it, you can also learn about me in my CV!
               </p>
-              <Button name="Conctact me!" isBeam containerClass="w-full mt-10" />
+              <a href="/assets/IgnacioMolina_Resume.pdf" target="_blank" className="w-full">
+                <Button name="Download CV" containerClass="w-full mt-10"  />
+              </a>
             </div>
           </div>
         </div>
@@ -123,7 +118,7 @@ function About() {
 
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
+              <div className="copy-container" onClick={handleCopy} onTouchStart={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">molinanacho33@gmail.com</p>
               </div>
