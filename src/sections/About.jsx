@@ -56,7 +56,7 @@ function About() {
               </p>
             </div>
           </div>
-        </div>
+        </div> 
 
         {/* CV Block */}
         <div className="col-span-1 xl:row-span-4">

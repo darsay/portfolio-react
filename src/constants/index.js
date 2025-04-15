@@ -142,11 +142,14 @@ export const workExperiences = [
     name: 'Merkur Dosniha',
     pos: 'C++ Software Engineer',
     duration: '2024 - Present',
-    title: 'Development of slot games...',
+    title: 'Development of slot games using a proprietary game engine on Linux and C++ environments.',
     icon: `${asset}assets/experience/merkur-dosniha-logo.png`,
     details: [
-      'Participated in full-cycle game development...',
-      'Created and maintained core systems...',
+      'Participated in full-cycle game development from scratch to final release.',
+      'Created and maintained core systems within the proprietary engine.',
+      'Designed and implemented new engine systems to enhance functionality.',
+      'Collaborated closely with design, art, and QA teams to ensure product quality and consistency.',
+      'Identified and resolved bugs to improve overall performance and stability.'
     ],
   },
   {
@@ -154,10 +157,13 @@ export const workExperiences = [
     name: 'Universidad Europea',
     pos: 'Educational Content Creator – Game Programming Master',
     duration: '2024 - 2025',
-    title: 'Development of educational content...',
+    title: 'Development of educational content for a master’s program in video game programming.',
     icon: `${asset}assets/experience/ue-logo.png`,
     details: [
-      'Designed and structured educational slides...',
+      'Designed and structured educational slides aligned with the course syllabus.',
+      'Recorded instructional videos covering game development concepts.',
+      'Created exercises and exams to assess student understanding and progress.',
+      'Preparing for future delivery and teaching of the course material.'
     ],
   },
   {
@@ -165,10 +171,13 @@ export const workExperiences = [
     name: 'Netspot Hub',
     pos: 'Game Developer',
     duration: '2020 - 2021',
-    title: 'Full prototyping of a real-time multiplayer game...',
+    title: 'Full prototyping of a real-time multiplayer game with an authoritative server in GO and Unity client for browsers.',
     icon: `${asset}assets/experience/netspot-logo.png`,
     details: [
-      'Prototyped a real-time multiplayer game...',
+      'Prototyped a real-time multiplayer game with an authoritative server built in GO and a Unity client for browser-based play.',
+      'Developed the entire game from scratch, including core mechanics, user interactions, and server-client communication.',
+      'Balanced game features to ensure fairness and smooth gameplay across all users.',
+      'Integrated external APIs to enhance gameplay and improve functionality.'
     ],
   },
   {
@@ -176,10 +185,13 @@ export const workExperiences = [
     name: 'Spika Tech',
     pos: 'Unity Developer',
     duration: '2022 - 2023',
-    title: 'Development and optimization of a VR Cardio...',
+    title: 'Development and optimization of a VR Cardio: a medical software application for preoperative cardiac planning.',
     icon: `${asset}assets/experience/spikatech-logo.png`,
     details: [
-      'Worked on VR-Cardio...',
+      'Worked on VR-Cardio, a medical tool used for pre-surgical cardiac planning in virtual reality.',
+      'Refactored the entire project to enable real-time multi-user online sessions across different platforms.',
+      'Developed custom shaders and modified the render pipeline to efficiently display complex medical data.',
+      'Focused on maintaining high performance and visual clarity in a resource-intensive VR environment.'
     ],
   },
   {
@@ -187,10 +199,12 @@ export const workExperiences = [
     name: 'Welme',
     pos: 'Unity Developer (Internship)',
     duration: '2022',
-    title: 'Development of VR interactions...',
+    title: 'Development of VR interactions and mini-games for a metaverse environment with online multiplayer functionality.',
     icon: `${asset}assets/experience/welme-logo.png`,
     details: [
-      'Developed various VR interactions...',
+      'Developed various VR interactions and mini-games within a metaverse environment.',
+      'Implemented real-time multiplayer features using Mirror and company APIs.',
+      'Worked on improving UI design, user interactivity, and navigation in a virtual reality space.',
     ],
   },
   {
@@ -198,10 +212,12 @@ export const workExperiences = [
     name: '5th Element Gaming',
     pos: 'Unity Developer (Internship)',
     duration: '2021 - 2022',
-    title: 'Started a game project from the ground up...',
+    title: 'Started a game project from the ground up, focusing on architecture and core gameplay mechanics.',
     icon: `${asset}assets/experience/fifthelement-logo.png`,
     details: [
-      'Designed the game’s architecture...',
+      'Designed the game’s architecture and developed the core gameplay loop from scratch.',
+      'Worked closely with the design team to create tools that streamlined the level-building process.',
+      'Contributed to the game’s prototyping and iterative development cycle.'
     ],
   },
 ];
