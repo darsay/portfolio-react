@@ -7,9 +7,9 @@ import { gsap } from 'gsap';
 
 function DemoComputer(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}/models/computer.glb`);
+  const { nodes, materials } = useGLTF(`/models/computer.glb`);
 
-  const txt = useVideoTexture(props.texture ? props.texture : `${import.meta.env.BASE_URL}/textures/project/project1.mp4`);
+  const txt = useVideoTexture(props.texture ? props.texture : `/textures/project/project1.mp4`);
 
   useEffect(() => {
     if (txt) {
@@ -1010,6 +1010,6 @@ function DemoComputer(props) {
   );
 };
 
-useGLTF.preload(`${import.meta.env.BASE_URL}/models/computer.glb`);
+useGLTF.preload(`/models/computer.glb`);
 
 export default DemoComputer;

@@ -11,11 +11,11 @@ function MouseLookerCharacter({ animationName = 'idle', ...props })
 {
   const group = useRef();
 
-  const character = useGLTF(`${import.meta.env.BASE_URL}/models/character_mixamo.glb`);
+  const character = useGLTF(`/models/character_mixamo.glb`);
   //const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = character;
 
-  const { animations: idleAnimation } = useFBX(`${import.meta.env.BASE_URL}/models/idle_mixamo.fbx`);
+  const { animations: idleAnimation } = useFBX(`/models/idle_mixamo.fbx`);
 
   idleAnimation[0].name = 'idle';
 
@@ -138,7 +138,7 @@ function MouseLookerCharacter({ animationName = 'idle', ...props })
   )
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}/models/character.glb`)
+useGLTF.preload(`/models/character.glb`)
 
 export default MouseLookerCharacter
 

@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="flex gap-3">
             <div className="social-icon hover:scale-110 transition-transform duration-300">
               <img 
-                src={`${import.meta.env.BASE_URL}/assets/github.svg`} 
+                src={`/assets/github.svg`} 
                 alt="github" 
                 className="w-1/2 h-1/2" 
               />
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex gap-3">
             <div className="social-icon hover:scale-110 transition-transform duration-300">
               <img 
-                src={`${import.meta.env.BASE_URL}/assets/linkedin.svg`} 
+                src={`/assets/linkedin.svg`} 
                 alt="linkedin" 
                 className="w-1/2 h-1/2" 
               />
@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="flex gap-3">
             <div className="social-icon hover:scale-110 transition-transform duration-300">
               <img 
-                src={`${import.meta.env.BASE_URL}/assets/itchio.svg`} 
+                src={`/assets/itchio.svg`} 
                 alt="itchio" 
                 className="w-1/2 h-1/2" 
               />

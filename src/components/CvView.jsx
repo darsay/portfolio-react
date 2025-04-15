@@ -5,9 +5,9 @@ import { useRef } from 'react';
 const CvView = (props) => {
   const cvRef = useRef();
 
-  const frontTexture = useLoader(TextureLoader, `${import.meta.env.BASE_URL}/textures/cv-screenshot.png`);
-  const backTexture = useLoader(TextureLoader, `${import.meta.env.BASE_URL}/textures/tcg-card-back.jpg`);
-  const alphaTexture = useLoader(TextureLoader, `${import.meta.env.BASE_URL}/textures/alpha-map.png`);
+  const frontTexture = useLoader(TextureLoader, `/textures/cv-screenshot.png`);
+  const backTexture = useLoader(TextureLoader, `/textures/tcg-card-back.jpg`);
+  const alphaTexture = useLoader(TextureLoader, `/textures/alpha-map.png`);
 
   return (
    <group ref={cvRef} {...props}>

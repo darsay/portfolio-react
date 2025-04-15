@@ -27,7 +27,7 @@ function About() {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src={`${import.meta.env.BASE_URL}/assets/pixel-art-me.gif`}
+              src={`/assets/pixel-art-me.gif`}
               alt="grid-1"
               className="w-full sm:h-[276px] h-fit object-contain"
             />
@@ -44,7 +44,7 @@ function About() {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src={`${import.meta.env.BASE_URL}/assets/pixel-art-me.gif`}
+              src={`/assets/pixel-art-me.gif`}
               alt="grid-2"
               className="w-full sm:h-[276px] h-fit object-contain"
             />
