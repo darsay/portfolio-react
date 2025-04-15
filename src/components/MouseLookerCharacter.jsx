@@ -11,23 +11,17 @@ function MouseLookerCharacter({ animationName = 'idle', ...props })
 {
   const group = useRef();
 
-  const character = useGLTF('/models/character_mixamo.glb');
+  const character = useGLTF(`${import.meta.env.BASE_URL}/models/character_mixamo.glb`);
   //const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = character;
 
-  const { animations: idleAnimation } = useFBX('/models/idle_mixamo.fbx');
-  const { animations: saluteAnimation } = useFBX('/models/salute.fbx');
-  const { animations: clappingAnimation } = useFBX('/models/clapping.fbx');
-  const { animations: victoryAnimation } = useFBX('/models/victory.fbx');
+  const { animations: idleAnimation } = useFBX(`${import.meta.env.BASE_URL}/models/idle_mixamo.fbx`);
 
   idleAnimation[0].name = 'idle';
-  saluteAnimation[0].name = 'salute';
-  clappingAnimation[0].name = 'clapping';
-  victoryAnimation[0].name = 'victory';
 
   const { actions } = useAnimations(
-    [idleAnimation[0], saluteAnimation[0], clappingAnimation[0], victoryAnimation[0]],
-    group,
+    [idleAnimation[0],],
+    group
   );
 
 
@@ -144,7 +138,7 @@ function MouseLookerCharacter({ animationName = 'idle', ...props })
   )
 }
 
-useGLTF.preload("/models/character.glb")
+useGLTF.preload(`${import.meta.env.BASE_URL}/models/character.glb`)
 
 export default MouseLookerCharacter
 

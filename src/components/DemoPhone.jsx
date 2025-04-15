@@ -7,10 +7,10 @@ import { gsap } from 'gsap';
 
 function DemoPhone(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF('/models/low_poly_mobile_phone.glb');
+  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}/models/low_poly_mobile_phone.glb`);
 
-  const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
-  const alphaTexture = useLoader(TextureLoader, '/textures/alpha-map.png');
+  const txt = useVideoTexture(props.texture ? props.texture : `${import.meta.env.BASE_URL}/textures/project/project1.mp4`);
+  const alphaTexture = useLoader(TextureLoader, `${import.meta.env.BASE_URL}/textures/alpha-map.png`);
 
   useEffect(() => {
     if (group.current) {
@@ -133,6 +133,6 @@ function DemoPhone(props) {
   )
 }
 
-useGLTF.preload('/models/low_poly_mobile_phone.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}/models/low_poly_mobile_phone.glb`)
 
 export default DemoPhone;
