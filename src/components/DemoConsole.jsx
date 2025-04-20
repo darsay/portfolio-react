@@ -6,7 +6,8 @@ import { gsap } from 'gsap';
 function DemoConsole(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF(`/models/demo-console.glb`);
-  
+
+
   const txt = useVideoTexture(props.texture ? props.texture : `/textures/project/project1.mp4`);
 
   useEffect(() => {
@@ -36,7 +37,7 @@ function DemoConsole(props) {
           rotation={[0, Math.PI, 0]}
           scale={-0.2}
         >
-          <meshStandardMaterial map={txt} toneMapped={false} />
+          <meshToonMaterial map={txt} toneMapped={false} />
         </mesh>
         
         <mesh

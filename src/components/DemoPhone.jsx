@@ -39,12 +39,12 @@ function DemoPhone(props) {
                     <Plane
                     castShadow
                     receiveShadow
-                    scale={[28, 58, 0]}
-                    position={[0, 2.2, 0]}
+                    scale={[29, 58, 0]}
+                    position={[0, 1.9, 0]}
                     
                     rotation={[-Math.PI / 2, 0, 0]}
                     >
-                        <meshStandardMaterial
+                        <meshToonMaterial
                             map={txt}
                             alphaMap={alphaTexture}
                             toneMapped={false}
@@ -60,9 +60,9 @@ function DemoPhone(props) {
                     position={[8.421, 65.722, -2.875]}
                     rotation={[Math.PI / 2, 0, 0]}
                     scale={[0.889, 1, 1]}
-                    >
+                >
                         <meshStandardMaterial color={0x999999} />
-                    </mesh>
+                </mesh>
                 <mesh
                     castShadow
                     receiveShadow
@@ -116,15 +116,6 @@ function DemoPhone(props) {
                     position={[6.5, 66.2, -3.564]}
                     rotation={[Math.PI / 2, 0, 0]}
                     scale={0.875}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.Camera_Front_PhoneButton_Mat_0.geometry}
-                    material={materials.PhoneButton_Mat}
-                    position={[0, 72.593, 2.4]}
-                    rotation={[Math.PI / 2, 0, 0]}
-                    scale={0.575}
                 />
                 </group>
             </group>

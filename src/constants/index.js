@@ -9,15 +9,15 @@ const asset = import.meta.env.BASE_URL;
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
+    title: 'Block Dasher',
     type: 'Game',
     desc:
-      'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created...',
+      'Complete the levels in the possible least moves number, to get three stars and unlock new worlds.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS...',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: `${asset}textures/project/project1.mp4`,
-    logo: `${asset}assets/project-logo1.png`,
+      'In Block Dasher, you will solve different puzzles in many different environments, from a calm garden full of trees and vegetation to a hot lava-filled volcano.',
+    href: 'https://github.com/Slow-Heat-Index/BlockDasher',
+    texture: `${asset}textures/project/blockdasher-video.mp4`,
+    logo: `${asset}assets/blockdasher-logo.png`,
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -25,22 +25,20 @@ export const myProjects = [
     },
     spotlight: `${asset}assets/spotlight1.png`,
     tags: [
-      { id: 1, name: 'React.js', path: `${asset}assets/react.svg` },
-      { id: 2, name: 'TailwindCSS', path: `${asset}assets/tailwindcss.png` },
-      { id: 3, name: 'TypeScript', path: `${asset}assets/typescript.png` },
-      { id: 4, name: 'Framer Motion', path: `${asset}assets/framer.png` },
+      { id: 1, name: 'Unity', path: `${asset}textures/technologies/unity-logo.png` },
+      { id: 2, name: 'C#', path: `${asset}textures/technologies/csharp-logo.png` },
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
+    title: 'Crush Crush Match!',
     type: 'Mobile',
     desc:
-      'LiveDoc is a powerful collaborative app that elevates the capabilities...',
+      'Match 3 game where you try to conquer your crush\'s heart!',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration...',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: `${asset}textures/project/project2.mp4`,
-    logo: `${asset}assets/project-logo2.png`,
+      'You will conquer the heart of your beloved by overcoming fun levels with many challenges! You can customize your appearance and that of the person you like and buy exciting boosters to make everything easier! Developed for Level Up Advanced Unity Mobile Programming bootcamp.',
+    href: 'https://github.com/darsay/crush-crush-match',
+    texture: `${asset}textures/project/crushcrushmatch-video.mp4`,
+    logo: `${asset}assets/crushcrushmatch-logo.png`,
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
@@ -48,21 +46,19 @@ export const myProjects = [
     },
     spotlight: `${asset}assets/spotlight2.png`,
     tags: [
-      { id: 1, name: 'React.js', path: `${asset}assets/react.svg` },
-      { id: 2, name: 'TailwindCSS', path: `${asset}assets/tailwindcss.png` },
-      { id: 3, name: 'TypeScript', path: `${asset}assets/typescript.png` },
-      { id: 4, name: 'Framer Motion', path: `${asset}assets/framer.png` },
+      { id: 1, name: 'Unity', path: `${asset}textures/technologies/unity-logo.png` },
+      { id: 2, name: 'C#', path: `${asset}textures/technologies/csharp-logo.png` },
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    type: 'Game',
-    desc: 'An innovative healthcare platform...',
+    title: 'Dunk Nation',
+    type: 'Web',
+    desc: 'Checkout NBA stats and results in real time!',
     subdesc:
-      'With a focus on efficiency, CarePulse integrates complex forms...',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: `${asset}textures/project/project3.mp4`,
-    logo: `${asset}assets/project-logo3.png`,
+      'Follow your favorite team, check out the calendar for the next games, and see the results of the last ones in an interactive way! Developed for Ironhack Web Development bootcamp using frontend technologies and an NBA API from Rapid API.',
+    href: 'https://github.com/iron-guardians/nba-results',
+    texture: `${asset}textures/project/dunknation-video.mp4`,
+    logo: `${asset}assets/dn-logo.png`,
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -74,18 +70,17 @@ export const myProjects = [
     tags: [
       { id: 1, name: 'React.js', path: `${asset}assets/react.svg` },
       { id: 2, name: 'TailwindCSS', path: `${asset}assets/tailwindcss.png` },
-      { id: 3, name: 'TypeScript', path: `${asset}assets/typescript.png` },
-      { id: 4, name: 'Framer Motion', path: `${asset}assets/framer.png` },
+      { id: 3, name: 'TypeScript', path: `${asset}textures/technologies/js-logo.png` },
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    type: 'Web',
-    desc: 'Horizon is a comprehensive online banking platform...',
+    title: 'Dress Code',
+    type: 'Game',
+    desc: 'DressCode is a little funky rhythm game developed in 48 hours where you play as the doorman of a club.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid...',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: `${asset}textures/project/project4.mp4`,
+      'The line will move along at the rythm of the music, but not every customer will follow the party\'s dress code! Your mission is to kick those rebel people out of the line before they get in! Winner of the GameGen Game Jam 2!',
+    href: 'https://darsay.itch.io/dresscode',
+    texture: `${asset}textures/project/dresscode-video.mp4`,
     logo: `${asset}assets/project-logo4.png`,
     logoStyle: {
       backgroundColor: '#0E1F38',
@@ -94,21 +89,19 @@ export const myProjects = [
     },
     spotlight: `${asset}assets/spotlight4.png`,
     tags: [
-      { id: 1, name: 'React.js', path: `${asset}assets/react.svg` },
-      { id: 2, name: 'TailwindCSS', path: `${asset}assets/tailwindcss.png` },
-      { id: 3, name: 'TypeScript', path: `${asset}assets/typescript.png` },
-      { id: 4, name: 'Framer Motion', path: `${asset}assets/framer.png` },
+      { id: 1, name: 'Unity', path: `${asset}textures/technologies/unity-logo.png` },
+      { id: 2, name: 'C#', path: `${asset}textures/technologies/csharp-logo.png` },
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
+    title: 'Zombie Horde - UE5 Prototype',
     type: 'Game',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service...',
+    desc: 'Survive a horde of zombies in this prototype developed in Unreal Engine 5.',
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe...',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: `${asset}textures/project/project5.mp4`,
-    logo: `${asset}assets/project-logo5.png`,
+      'In this prototype, takes influence from modern 3rd person shooter gameplay from games like Fortnite, where there are fluid procedural animations, a pickable weapon and items system, and detailed enemies with different AIs and details like blood decals.',
+    href: 'https://gitlab.com/nachOneal/unrealzombieproject',
+    texture: `${asset}textures/project/zombie-video.mp4`,
+    logo: `${asset}textures/technologies/ue-logo.png`,
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
@@ -116,10 +109,8 @@ export const myProjects = [
     },
     spotlight: `${asset}assets/spotlight5.png`,
     tags: [
-      { id: 1, name: 'React.js', path: `${asset}assets/react.svg` },
-      { id: 2, name: 'TailwindCSS', path: `${asset}assets/tailwindcss.png` },
-      { id: 3, name: 'TypeScript', path: `${asset}assets/typescript.png` },
-      { id: 4, name: 'Framer Motion', path: `${asset}assets/framer.png` },
+      { id: 1, name: 'Unreal Engine', path: `${asset}textures/technologies/ue-logo.png` },
+      { id: 2, name: 'C++', path: `${asset}textures/technologies/cpp-logo.png` },
     ],
   },
 ];
@@ -170,7 +161,7 @@ export const workExperiences = [
     id: 3,
     name: 'Netspot Hub',
     pos: 'Game Developer',
-    duration: '2020 - 2021',
+    duration: '2023',
     title: 'Full prototyping of a real-time multiplayer game with an authoritative server in GO and Unity client for browsers.',
     icon: `${asset}assets/experience/netspot-logo.png`,
     details: [

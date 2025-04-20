@@ -91,7 +91,7 @@ function Projects() {
                         <Center>
                             <Suspense fallback={<CanvasLoader />}>
                             <group scale={1} position={[0, 0, -13]} rotation={[0, 0, 0]}>
-                                {renderProjectComponent(currentProject.type, currentProject.videoTexture)}                       
+                                {renderProjectComponent(currentProject.type, currentProject.texture)}                       
                             </group>
                             </Suspense>
                         </Center>
