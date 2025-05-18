@@ -17,9 +17,9 @@ function DemoComputer(props) {
   });
 
   useEffect(() => {
-    if (txt) {
-      txt.flipY = false;
-    }
+    if (txt?.image) txt.image.muted = true;
+    if (txt?.image) txt.image.play().catch(() => {});
+    if (txt) txt.flipY = true;
 
     if (group.current) {
       gsap.fromTo(

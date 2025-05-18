@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense, useState, useEffect } from "react";
 
 import { myProjects } from "../constants";
 
@@ -14,7 +14,18 @@ function Projects() {
     const [selectedProjectIdx, setSelectedProjectIdx] = useState(0);
     const currentProject = myProjects[selectedProjectIdx];
 
-    // const txt = useVideoTexture('textures/project/project1.mp4');
+    const [videoReady, setVideoReady] = useState(false);
+
+    useEffect(() => {
+    const enableVideo = () => setVideoReady(true);
+    window.addEventListener('touchstart', enableVideo, { once: true });
+    window.addEventListener('click', enableVideo, { once: true });
+
+    return () => {
+        window.removeEventListener('touchstart', enableVideo);
+        window.removeEventListener('click', enableVideo);
+    };
+    }, []);
 
     const handleNavigation = (direction) => {
         setSelectedProjectIdx((prevIdx) => {
