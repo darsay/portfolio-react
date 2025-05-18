@@ -19,7 +19,7 @@ function DemoComputer({texture, videoReady, ...props}) {
   useEffect(() => {
     if (txt?.image) txt.image.muted = true;
     if (txt?.image) txt.image.play().catch(() => {});
-    if (txt) txt.flipY = true;
+    if (txt) txt.flipY = false;
 
     if (group.current) {
       gsap.fromTo(
