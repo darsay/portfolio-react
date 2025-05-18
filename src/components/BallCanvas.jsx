@@ -25,7 +25,7 @@ function BallCanvas({tech}) {
         <div className="">
             <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
                 <Suspense fallback={<CanvasLoader />}>
-                    <OrbitControls enableZoom={false} />
+                    <OrbitControls enableZoom={false} enablePan={false}/>
                     <TechBall imageUrl={tech.icon}/>
                 </Suspense>
             </Canvas>
