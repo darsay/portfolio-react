@@ -5,11 +5,11 @@ import { useRef, useEffect } from 'react';
 import { useGLTF, useVideoTexture } from '@react-three/drei';
 import { gsap } from 'gsap';
 
-function DemoComputer(props) {
+function DemoComputer({texture, videoReady, ...props}) {
   const group = useRef();
   const { nodes, materials } = useGLTF(`/models/computer.glb`);
 
-  const txt = useVideoTexture(props.texture || '/textures/project/project1.mp4', {
+  const txt = useVideoTexture(videoReady ? (texture || '/textures/project/project1.mp4') : null, {
     muted: true,
     loop: true,
     start: true,

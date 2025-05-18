@@ -3,12 +3,11 @@ import { useVideoTexture } from '@react-three/drei'
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-function DemoConsole(props) {
+function DemoConsole({texture, videoReady, ...props}) {
   const group = useRef();
   const { nodes, materials } = useGLTF(`/models/demo-console.glb`);
 
-
-  const txt = useVideoTexture(props.texture || '/textures/project/project1.mp4', {
+  const txt = useVideoTexture(videoReady ? (texture || '/textures/project/project1.mp4') : null, {
     muted: true,
     loop: true,
     start: true,

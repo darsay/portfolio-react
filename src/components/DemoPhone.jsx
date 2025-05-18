@@ -5,11 +5,11 @@ import { useLoader} from '@react-three/fiber';
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-function DemoPhone(props) {
+function DemoPhone({texture, videoReady, ...props}) {
   const group = useRef();
   const { nodes, materials } = useGLTF(`/models/low_poly_mobile_phone.glb`);
 
-  const txt = useVideoTexture(props.texture || '/textures/project/project1.mp4', {
+  const txt = useVideoTexture(videoReady ? (texture || '/textures/project/project1.mp4') : null, {
     muted: true,
     loop: true,
     start: true,

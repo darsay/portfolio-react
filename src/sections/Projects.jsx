@@ -37,16 +37,16 @@ function Projects() {
         })
     }
     
-    function renderProjectComponent(type, texture) {
+    function renderProjectComponent(type, texture, videoReady) { 
         switch (type) {
             case 'Game':
-                return <DemoConsole texture={texture} />;
+                return <DemoConsole texture={texture} videoReady={videoReady} />;
             case 'Web':
-                return <DemoComputer texture={texture} />;
+                return <DemoComputer texture={texture} videoReady={videoReady}/>;
             case 'Mobile':
-                return <DemoPhone texture={texture} />;
+                return <DemoPhone texture={texture} videoReady={videoReady}/>;
             default:
-                return  <DemoConsole texture={texture} />;
+                return  <DemoConsole texture={texture} videoReady={videoReady}/>;
         }
     }
         
@@ -102,7 +102,7 @@ function Projects() {
                         <Center>
                             <Suspense fallback={<CanvasLoader />}>
                             <group scale={1} position={[0, 0, -13]} rotation={[0, 0, 0]}>
-                                {renderProjectComponent(currentProject.type, currentProject.texture)}                       
+                                {renderProjectComponent(currentProject.type, currentProject.texture, videoReady)}                       
                             </group>
                             </Suspense>
                         </Center>
