@@ -12,10 +12,12 @@ function MouseLookerCharacter({ animationName = 'idle', ...props })
   const group = useRef();
 
   const character = useGLTF(`/models/character_mixamo.glb`);
-  //const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = character;
 
   const { animations: idleAnimation } = useFBX(`/models/idle_mixamo.fbx`);
+
+  
+  const smoothPointer = useRef({ x: 0, y: 0 });
 
   idleAnimation[0].name = 'idle';
 
@@ -40,39 +42,37 @@ function MouseLookerCharacter({ animationName = 'idle', ...props })
 
 
     //Animating the head to follow the mouse position
-  useFrame(({ pointer , camera }) => {
-      if (headBoneRef.current) {
-        // Convert mouse position from [-1, 1] range to world coordinates
-        const vector = new THREE.Vector3(pointer.x, -pointer.y, 0.5); // Invert Y-axis for correct mouse behavior
-        vector.unproject(camera); // Convert to 3D world coordinates
-
-        // Calculate the direction from the head to the mouse position
-        const dir = vector.sub(headBoneRef.current.position).normalize();
-
-        // Apply yaw (rotation around the Y-axis) for horizontal movement
-        const yaw = Math.atan2(dir.x, dir.z) * 100;
-
-        // Apply pitch (rotation around the X-axis) for vertical movement
-        const pitch = Math.atan2(dir.y, Math.sqrt(dir.x * dir.x + dir.z * dir.z)) * 100;
-
-        // Smooth the rotations (optional, for smoother movement)
-        headBoneRef.current.rotation.y = THREE.MathUtils.lerp(
-          headBoneRef.current.rotation.y,
-          yaw,
-          0.5 // Adjust for smoother interpolation
-        );
-        headBoneRef.current.rotation.x = THREE.MathUtils.lerp(
-          headBoneRef.current.rotation.x,
-          pitch,
-          0.5 // Adjust for smoother interpolation
-        );; // Vertical rotation
-
-        // Optional: Limit the rotation to prevent unnatural movement
-        // For example, to avoid full 360-degree rotation on the X-axis
-        headBoneRef.current.rotation.x = Math.max(Math.min(headBoneRef.current.rotation.x, Math.PI / 4), -Math.PI / 4); // Limit vertical look
-
-      }
-  });
+    useFrame(({ pointer, camera }) => {
+      if (!headBoneRef.current) return;
+    
+      // Lerp the pointer toward the actual one for smoothing
+      smoothPointer.current.x = THREE.MathUtils.lerp(smoothPointer.current.x, pointer.x, 0.1);
+      smoothPointer.current.y = THREE.MathUtils.lerp(smoothPointer.current.y, pointer.y, 0.1);
+    
+      const vector = new THREE.Vector3(
+        smoothPointer.current.x,
+        -smoothPointer.current.y,
+        0.5
+      ).unproject(camera);
+    
+      const dir = vector.sub(headBoneRef.current.position).normalize();
+    
+      const yaw = Math.atan2(dir.x, dir.z) * 100;
+      const pitch = Math.atan2(dir.y, Math.sqrt(dir.x ** 2 + dir.z ** 2)) * 100;
+    
+      headBoneRef.current.rotation.y = THREE.MathUtils.lerp(
+        headBoneRef.current.rotation.y,
+        yaw,
+        0.5
+      );
+    
+      headBoneRef.current.rotation.x = THREE.MathUtils.clamp(
+        THREE.MathUtils.lerp(headBoneRef.current.rotation.x, pitch, 0.5),
+        -Math.PI / 4,
+        Math.PI / 4
+      );
+    });
+    
 
   return (
     <group {...props} dispose={null} ref={group}>
