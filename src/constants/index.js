@@ -81,7 +81,7 @@ export const myProjects = [
       'The line will move along at the rythm of the music, but not every customer will follow the party\'s dress code! Your mission is to kick those rebel people out of the line before they get in! Winner of the GameGen Game Jam 2!',
     href: 'https://darsay.itch.io/dresscode',
     texture: `${asset}textures/project/dresscode-video.mp4`,
-    logo: `${asset}assets/project-logo4.png`,
+    logo: `${asset}assets/dresscode-logo.png`,
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
