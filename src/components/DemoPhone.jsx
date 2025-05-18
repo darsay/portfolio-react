@@ -9,7 +9,12 @@ function DemoPhone(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF(`/models/low_poly_mobile_phone.glb`);
 
-  const txt = useVideoTexture(props.texture ? props.texture : `/textures/project/project1.mp4`);
+  const txt = useVideoTexture(props.texture || '/textures/project/project1.mp4', {
+    muted: true,
+    loop: true,
+    start: true,
+    playsInline: true
+  });
   const alphaTexture = useLoader(TextureLoader, `/textures/alpha-map.png`);
 
   useEffect(() => {

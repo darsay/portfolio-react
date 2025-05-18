@@ -8,7 +8,12 @@ function DemoConsole(props) {
   const { nodes, materials } = useGLTF(`/models/demo-console.glb`);
 
 
-  const txt = useVideoTexture(props.texture ? props.texture : `/textures/project/project1.mp4`);
+  const txt = useVideoTexture(props.texture || '/textures/project/project1.mp4', {
+    muted: true,
+    loop: true,
+    start: true,
+    playsInline: true
+  });
 
   useEffect(() => {
     if (txt) {
