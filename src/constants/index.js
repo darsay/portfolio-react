@@ -128,8 +128,22 @@ export const technologies = [
 ];
 
 export const workExperiences = [
+    {
+    id: 7,
+    name: 'Indra',
+    pos: 'XR Software Engineer',
+    duration: '2025 - Present',
+    title: 'Developing XR experiences and use cases in an innovation lab.',
+    icon: `${asset}assets/experience/indra-logo.png`,
+    details: [
+      'Adapting new XR technologies to different use cases.',
+      'Using Unity and other tools to create innovative XR experiences.',
+      'Collaborating with cross-functional teams to deliver high-quality solutions.',
+      'Identifying opportunities for XR integration in various industries.'
+    ],
+  },
   {
-    id: 1,
+    id: 6,
     name: 'Merkur Dosniha',
     pos: 'C++ Software Engineer',
     duration: '2024 - Present',
@@ -144,7 +158,7 @@ export const workExperiences = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     name: 'Universidad Europea',
     pos: 'Educational Content Creator – Game Programming Master',
     duration: '2024 - 2025',
@@ -158,7 +172,7 @@ export const workExperiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Netspot Hub',
     pos: 'Game Developer',
     duration: '2023',
@@ -172,7 +186,7 @@ export const workExperiences = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     name: 'Spika Tech',
     pos: 'Unity Developer',
     duration: '2022 - 2023',
@@ -186,7 +200,7 @@ export const workExperiences = [
     ],
   },
   {
-    id: 5,
+    id: 2,
     name: 'Welme',
     pos: 'Unity Developer (Internship)',
     duration: '2022',
@@ -199,7 +213,7 @@ export const workExperiences = [
     ],
   },
   {
-    id: 6,
+    id: 1,
     name: '5th Element Gaming',
     pos: 'Unity Developer (Internship)',
     duration: '2021 - 2022',
