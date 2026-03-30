@@ -146,7 +146,7 @@ export const workExperiences = [
     id: 6,
     name: 'Merkur Dosniha',
     pos: 'C++ Software Engineer',
-    duration: '2024 - Present',
+    duration: '2024 - 2025',
     title: 'Development of slot games using a proprietary game engine on Linux and C++ environments.',
     icon: `${asset}assets/experience/merkur-dosniha-logo.png`,
     details: [
